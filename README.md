@@ -21,7 +21,7 @@ npm i
 Instructions and examples for use including screenshots and github repo/page.
 
 - Click link to view repo: [Github Repo](https://github.com/Git-Vdim-Hub/genMe-readMe)
-
+- Walk through [video](https://drive.google.com/file/d/1qPaBY7DtE7tYfHUMESCH-QEjW-2nMOGE/view)
 
 - Screenshots
 
