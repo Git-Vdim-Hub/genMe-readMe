@@ -75,7 +75,7 @@ function init() {
         .then((data) => {
             //console.log(data.name);
             //console.log(data.license);
-            writeToFile(data.name+4, data);
+            writeToFile(data.name, data);
         })
 }
 
