@@ -5,7 +5,7 @@ const fs = require('fs');
 //Array of questions for user input
 const questions = ['What is the name of your project? ', 'Please describe the project: ', 'What are the installation instructions? ',
                    'What is the usage information? ', 'What license are you using?', 'Please provide contribution guidelines: ',
-                   'What are the test instructions? ', 'What is your name? ', 'What is your e-mail? ', 'What is your github address? '];
+                   'What are the test instructions? ', 'What is your gitHub user name? ', 'What is your e-mail? ', 'What is your github address? '];
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
@@ -14,9 +14,6 @@ function writeToFile(fileName, data) {
     fs.writeFile(file, writtenStuff, (err) =>
     err ? console.log(err) : console.log('Title')
     )
-    // fs.appendFile(file, descTitle, (err) =>
-    // err ? console.log(err) : console.log('Description Title')
-    // )
 }
 
 // function to initialize app
@@ -47,7 +44,7 @@ function init() {
                 type: 'list',
                 name: 'license',
                 message: questions[4],
-                choices: ['MIT', 'Apache', 'Boost', 'BSD']
+                choices: ['MIT', 'Apache', 'Boost', 'BSD', 'Mozilla']
             },
             {
                 type: 'input',
@@ -78,7 +75,7 @@ function init() {
         .then((data) => {
             //console.log(data.name);
             //console.log(data.license);
-            writeToFile(data.name+3, data);
+            writeToFile(data.name+4, data);
         })
 }
 
